@@ -1,0 +1,286 @@
+@font-face {
+  font-display: block;
+  font-family: 'Inter';
+  src: url('./fonts/Inter/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'Inter';
+  src: url('./fonts/Inter/Inter-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'Syne';
+  src: url('./fonts/Syne/Syne-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'Syne';
+  src: url('./fonts/Syne/Syne-ExtraBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: block;
+  font-family: 'PlayfairDisplay';
+  src: url('./fonts/PlayfairDisplay/PlayfairDisplay-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: oblique;
+}
+
+@media (max-width: 767px) {
+	.adapts {
+    flex-direction: column;
+  }
+  .contacts {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {  
+  .adapts {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {  
+	.adapts {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1200px) {  
+}
+
+body {
+  max-width: 100%;
+  font-family: 'Inter';
+  font-weight: normal;
+  font-size: 16px;
+  color: #333;
+  background-color: #f5f5f5;
+  line-height: 150%;
+  padding: 0;
+  border: 0;
+}
+
+.links {
+  display: inline-block;
+  position: relative;
+  color: #ae2d2d;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: #333333;
+  transition: color 0.25s
+}
+
+.links::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;         
+  left: 0;
+  background-color: #ae2d2d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.links:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.ingredients-links {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+.ingredients-links::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;         
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.ingredients-links:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.basic-format {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.regular-block {
+  max-width: 100%;
+  width: 800px;
+  background-color: #ffffff;
+}
+
+.head {
+  display: none;
+}
+
+.figures {
+  max-width: 100%;
+  margin: auto;
+}
+
+.imgs {
+  max-width: 100%;
+  padding: 20px 0 0 0;
+}
+
+.first-block {
+  margin: 30px 0 0 0;
+}
+
+.last-block {
+  margin: 0 0 20px 0;
+}
+
+.air {
+  display: block;
+  height: 6px;
+}
+
+.headings {
+  padding: 20px 20px 0px 20px;
+  margin: 0 0 10px 0;
+  text-align: left;
+}
+
+h1 {
+  font-family: 'Syne';
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 130%;
+}
+
+h2 {
+  font-family: 'Syne';
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+h3 {
+  font-family: 'Syne';
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.author {
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0 20px 0 20px;
+  margin: 0 0 10px 0;
+}
+
+.caption {
+  font-size: 10px;
+  padding: 0px 20px 0px 20px;
+}
+
+.box {
+  max-width: 100%;
+}
+
+.text-box {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 20px 0 0;
+}
+
+.text {
+  display: inline-block;
+  text-align: left;
+}
+
+.opac-text {
+  opacity: 0.72;
+}
+
+.highlight {
+  color: #ae2d2d;
+  opacity: 0.7;
+}
+
+.oblique {
+  font-family: 'PlayfairDisplay';
+  font-style: oblique;
+}
+
+.u-lists {
+  list-style-type: circle;
+  padding: 0 20px 0 40px;
+}
+
+.o-lists {
+  padding: 0 20px 0 40px;
+}
+
+.ingredients {
+  background-color: #ae2d2d;
+  color: #ffffff;
+  padding: 10px 0 30px 30px;
+  margin: 0 0 0 0
+}
+
+.end {
+  font-family: 'PlayfairDisplay';
+  font-size: 40px;
+  text-align: center;
+  padding: 10px 20px 20px 20px;
+}
+
+.menu {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  line-height: 24px;
+  vertical-align: middle;
+  list-style-type: none;
+  padding: 0 0 0 20px;
+}
+
+.menu-item {
+  margin: 0 20px 0 0;
+}
+
+.menu-item-notlink {
+  line-height: 21px;
+  vertical-align: middle;
+}
