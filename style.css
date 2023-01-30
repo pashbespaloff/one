@@ -63,6 +63,12 @@
 @media (min-width: 1200px) {  
 }
 
+* {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+}
+
 body {
   max-width: 100%;
   font-family: 'Inter';
@@ -144,7 +150,8 @@ body {
 }
 
 .head {
-  display: none;
+  display: none; 
+  /* There should be a logo, a name, some navigation but i haven't done it yet */
 }
 
 .figures {
@@ -165,36 +172,38 @@ body {
   margin: 0 0 20px 0;
 }
 
-.air {
+/* .air {
   display: block;
   height: 6px;
-}
-
-.headings {
-  padding: 20px 20px 0px 20px;
-  margin: 0 0 10px 0;
-  text-align: left;
-}
+} */
 
 h1 {
   font-family: 'Syne';
   font-size: 24px;
   font-weight: bold;
   line-height: 130%;
+  text-align: left;
 }
 
-h2 {
-  font-family: 'Syne';
+.h1-ingredients {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.h1-process {
   font-size: 20px;
   font-weight: bold;
   line-height: 150%;
 }
 
-h3 {
-  font-family: 'Syne';
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 150%;
+.outer-headings {
+  padding: 20px 20px 0px 20px;
+  margin: 0 0 10px 0;
+}
+
+.inner-headings {
+  padding: 10px 0 10px 0;
 }
 
 .author {
@@ -250,8 +259,8 @@ h3 {
 .ingredients {
   background-color: #ae2d2d;
   color: #ffffff;
-  padding: 10px 0 30px 30px;
-  margin: 0 0 0 0
+  padding: 10px 0 20px 30px;
+  margin: 6px 0 6px 0;
 }
 
 .end {
@@ -265,6 +274,7 @@ h3 {
   display: flex;
   justify-content: left;
   width: 100%;
+  margin: 10px 0 20px 0;
 }
 
 .contacts {
